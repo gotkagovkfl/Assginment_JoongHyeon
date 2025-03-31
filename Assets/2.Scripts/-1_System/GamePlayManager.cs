@@ -68,8 +68,6 @@ public class GamePlayManager : MonoBehaviour
 
         //  트럭 초기화 - 하위 박스랑 히어로도 초기화됨. 
         FindObjectOfType<Truck>().Init(playingSection,backgroundScrollers);
-        
-
     }
 
 

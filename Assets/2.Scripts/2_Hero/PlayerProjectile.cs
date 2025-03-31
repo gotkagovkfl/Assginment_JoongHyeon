@@ -45,7 +45,7 @@ public class PlayerProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Monster") && other.TryGetComponent(out EnemyEntity enemyEntity))
+        if (other.CompareTag(GameConstants.enemyTag) && other.TryGetComponent(out EnemyEntity enemyEntity))
         {
             Vector2 hitPoint = other.ClosestPoint(transform.position);
             enemyEntity.TakeDamage(hitPoint,weapon.damage);

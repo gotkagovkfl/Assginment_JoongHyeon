@@ -16,10 +16,9 @@ GameObject:
   - component: {fileID: 2024237298749743214}
   - component: {fileID: 522088470320814901}
   - component: {fileID: 2304876693594942528}
-  - component: {fileID: 1158713775156698567}
   m_Layer: 0
   m_Name: ZombieMelee
-  m_TagString: Monster
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +109,7 @@ MonoBehaviour:
   layerNum: 0
   _movementSpeed: 3
   _jumpPower: 4
-  _attackPower: 1
+  _attackPower: 0
   gravityOn: 0
   _isGrounded: 0
   _isJumping: 0
@@ -215,43 +214,8 @@ MonoBehaviour:
   t_backSensor: {fileID: 3076565068667551663}
   _bottomSensorRadius: 0.18
   _forwardSensorRange: 0.1
-  _backSensorRange: 0.5
+  _backSensorRange: 0.3
   checkedPos: {x: 0, y: 0}
---- !u!58 &1158713775156698567
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319310827380095937}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.09, y: 0.15}
-  serializedVersion: 2
-  m_Radius: 0.18
 --- !u!1 &2094693183665648150
 GameObject:
   m_ObjectHideFlags: 0

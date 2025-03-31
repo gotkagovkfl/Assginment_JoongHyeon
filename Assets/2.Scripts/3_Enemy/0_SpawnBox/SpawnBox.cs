@@ -54,6 +54,7 @@ public class SpawnBox : EnemyEntity
     {
 
         int rand = UnityEngine.Random.Range(0,3);
+        // int rand = 0;
 
         Monster monster = Instantiate(prefab_monster.gameObject,t_enemies).GetComponent<Monster>();
         monster.Init(rand,transform.position);

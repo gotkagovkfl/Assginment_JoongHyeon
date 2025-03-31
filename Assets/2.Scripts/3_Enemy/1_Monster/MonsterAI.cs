@@ -131,7 +131,8 @@ public class MonsterAI : MonoBehaviour
     MonsterPositionState GetNewPositionState()
     {
         //
-        var hit = Physics2D.Raycast(t_forwardSensor.position - new Vector3(float.Epsilon,0), Vector2.left, _forwardSensorRange, 1<<GameConstants.truckLayer| 1<<layerNum);
+        var hit = Physics2D.Raycast(t_forwardSensor.position - new Vector3(float.Epsilon,0),
+         Vector2.left, _forwardSensorRange, 1<<GameConstants.truckLayer| 1<<layerNum);
 
         MonsterPositionState ret = MonsterPositionState.Default;
         if( hit.collider == null)

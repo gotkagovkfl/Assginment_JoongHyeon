@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3676391007594299969}
   m_Layer: 0
-  m_Name: TruckStopPoint
+  m_Name: TruckBreakPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,11 +142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2782167730075465312, guid: bc1a2c303bcaccc4c81494e20cf212aa, type: 3}
       propertyPath: m_TagString
-      value: Monster
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7823683596264433737, guid: bc1a2c303bcaccc4c81494e20cf212aa, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -5,7 +5,10 @@ using UnityEngine;
 
 public static class GameConstants
 {
-
+    // Tag
+    public static readonly string enemyTag = "Enemy";
+    
+    // layer
     public static readonly int truckLayer = 10;
     public static readonly int BoxLayer = 11;
     public static readonly int HeroLayer = 12;
@@ -15,6 +18,7 @@ public static class GameConstants
     public static readonly int spawnBoxLayer = 16;
     public static readonly int totalEnemyLayer= 1<<monsterLayer_0| 1<<monsterLayer_1|1<<monsterLayer_2 | 1<<spawnBoxLayer;
 
+    // Monster
     public static readonly Dictionary<int, float> lineHeights = new(){
                                                                 {0, -3.62f},
                                                                 {1, -3.62f+0.25f},
